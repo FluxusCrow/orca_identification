@@ -14,7 +14,7 @@ Under construction.
 Currently images can be extracted from the photo-identification catalogue and are locally saved.
 
 ## Instructions
-After cloning this repo, download the publication ["Photo-identification catalogue, population status, and distribution of Bigg's killer whales known from coastal waters of British Columbia, Canada"](https://publications.gc.ca/site/eng/9.873109/publication.html) and move it into the folder "data".
+After cloning this repo, download the publication [Photo-identification catalogue, population status, and distribution of Bigg's killer whales known from coastal waters of British Columbia, Canada](https://publications.gc.ca/site/eng/9.873109/publication.html) and move it into the folder "data".
 
 ## Resources
 Orcas of the population of the coastal waters of British Columbia, Canada, are identified regularly by the Cetacean Research Program of the ["Pacific Biological Station"](https://www.pac.dfo-mpo.gc.ca/science/facilities-installations/index-eng.html) of the ["Fisheries and Oceans Canada"](https://www.dfo-mpo.gc.ca/index-eng.html). The results are published free of charge and the latest version (state October 2022) can be downloaded ["here"](https://publications.gc.ca/site/eng/9.873109/publication.html). I only provide an automated identification tool based on this publication but I was not involved in the work of this publication. Credit for the publication go to Towers et al. and the before mentioned institute and department.
