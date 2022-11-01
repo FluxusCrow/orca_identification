@@ -3,15 +3,22 @@
 
 import numpy as np
 import cv2
+import os
+import sys
 
-# get image
-img = cv2.imread("data/images/p29-96.png")
+# change working directory to directory of this file
+os.chdir(sys.path[0])
 
-# extract the most dominant edges
-edges = cv2.Canny(img, 200, 290)
+# create folder "data/images_contour" if not existing already
+if not "images_contour" in os.listdir("data"):
+    os.mkdir("data/images_contour")
 
 #cv2.imshow("test", edges)
 #cv2.waitKey(0)
 
-# save the file
-cv2.imwrite("data/test.png", edges)
+# Iterate through all images in "images_original", extract most dominant edges and save new file
+for source_image in os.listdir("data/images_original"):
+    if not source_image in os.listdir("data/images_contour"):
+        img = cv2.imread(f"data/images_original/{source_image}")
+        edges = cv2.Canny(img, 260, 290)
+        cv2.imwrite(f"data/images_contour/{source_image}", edges)
