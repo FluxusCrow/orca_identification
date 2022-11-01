@@ -129,5 +129,4 @@ dmypy.json
 .pyre/
 
 orca_catalogue_2019.pdf
-data/images/*.png
-data/*.png
+*.png
