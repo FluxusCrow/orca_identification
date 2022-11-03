@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 import os
 import sys
-import math
+
 
 # change working directory to directory of this file
 os.chdir(sys.path[0])
