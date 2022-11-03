@@ -5,6 +5,7 @@ import numpy as np
 import cv2
 import os
 import sys
+import math
 
 # change working directory to directory of this file
 os.chdir(sys.path[0])
@@ -20,5 +21,6 @@ if not "images_contour" in os.listdir("data"):
 for source_image in os.listdir("data/images_original"):
     if not source_image in os.listdir("data/images_contour"):
         img = cv2.imread(f"data/images_original/{source_image}")
-        edges = cv2.Canny(img, 260, 290)
+        img = cv2.GaussianBlur(img, (3,3),0)
+        edges = cv2.Canny(img, 200, 300)
         cv2.imwrite(f"data/images_contour/{source_image}", edges)
